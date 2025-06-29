@@ -53,7 +53,39 @@ Abre tu terminal y ejecuta los siguientes comandos:
 ```bash
 git clone [https://github.com/usuario/proyecto-riego-iot.git](https://github.com/yefringeovany/finish-proyect-telecomunicaciones.git)
 cd (name-proyect)
+```
+### Instalacion de Dependencias
+```bash
+npm install
+```
 
+### Variables de entorno (.env)
+```bash
+MQTT_BROKER=mqtt://broker.emqx.io
+MQTT_TOPIC_SENSOR=sensor/temperatura
+MQTT_TOPIC_HUMEDAD=sensor/humedad
+MQTT_TOPIC_CONTROL=bomba/control
+MQTT_TOPIC_STATUS=bomba/status
+
+FIREBASE_API_KEY=tu_api_key
+FIREBASE_AUTH_DOMAIN=tu_auth_domain
+FIREBASE_DATABASE_URL=tu_database_url
+FIREBASE_PROJECT_ID=tu_project_id
+FIREBASE_STORAGE_BUCKET=tu_storage_bucket
+FIREBASE_MESSAGING_SENDER_ID=tu_sender_id
+FIREBASE_APP_ID=tu_app_id
+
+```
+### Ejecutar el servidor de desarrollo
+```bash
+node index.js
+```
+
+### Iniciar PM2 
+```bash
+npm install -g pm2
+pm2 start index.js
+```
 
 
 
