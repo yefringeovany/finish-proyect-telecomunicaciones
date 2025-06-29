@@ -41,15 +41,23 @@ Desarrollar una solución IoT que:
 - **Broker MQTT (broker.emqx.io)**: Comunicación en tiempo real entre dispositivos y el servidor.
 - **Render**: Despliegue del frontend y backend del sistema web.
 
----
+### Figura 1:
+![Image](https://github.com/user-attachments/assets/69bc890b-7c9d-4081-85ca-8fc044ed4fde)
 
-## 🔌 Arquitectura del Sistema
+## 🔧 Instalación del Backend (Node.js + MQTT + Firebase)
 
-```plaintext
-[SENSOR DHT22] --> [ESP32] ==(WiFi + MQTT)==> [Servidor MQTT]
-                                             |
-                            [Node.js Backend + Firebase]
-                                             |
-                               [Frontend React - Usuario]
-                                             |
-                               [Arduino Uno] --> [Relé] --> [Bomba]
+### 1. Clona el repositorio
+
+Abre tu terminal y ejecuta los siguientes comandos:
+
+```bash
+git clone [https://github.com/usuario/proyecto-riego-iot.git](https://github.com/yefringeovany/finish-proyect-telecomunicaciones.git)
+cd (name-proyect)
+
+
+
+
+
+
+
+
